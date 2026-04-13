@@ -3,16 +3,19 @@ import java.util.Scanner;
 public class MorgageCalculator {
     public static void main(String[] args) {
 
-        Scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Hi, what is your principal?");
-        double Principal = scanner.next.Double();
+        double Principal = scanner.nextDouble();
 
         System.out.println("what is your annual interest rate?" );
-        float interestRate = scanner.nextFloat();
+        double interestRate = scanner.nextDouble();
 
         System.out.println("What is your loan term in years?");
+        int loanTerm = scanner.nextInt();
+
         
+
 
 
 
