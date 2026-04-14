@@ -28,9 +28,13 @@ public class MorgageCalculator {
 
         double totalInterest = (monthlyPayment * numberOfPayments) - principal;
 
+      //Now printing outputs base on the user inputs and calculations
 
+        System.out.println();
+        System.out.printf("Monthly Payment: $%.2f%n", monthlyPayment);
+        System.out.printf("Total Interest Paid: $%.2f%n", totalInterest);
 
-
+        scanner.close();
 
 
 
