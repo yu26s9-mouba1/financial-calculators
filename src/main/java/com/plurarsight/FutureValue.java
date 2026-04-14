@@ -30,6 +30,18 @@ public class FutureValue {
          //Now, calculating the total interest earned by the custumer
          double totalInterest = futureValue - principal;
 
+         //Time to print the outputs
+
+         System.out.println();
+         System.out.println("CD Investment Results");
+         System.out.println("----------------------");
+         System.out.printf("Future Value: $%.2f%n", futureValue);
+         System.out.printf("Total Interest Earned: $%.2f%n", totalInterest);
+
+         scanner.close();
+
+
+
 
 
 
