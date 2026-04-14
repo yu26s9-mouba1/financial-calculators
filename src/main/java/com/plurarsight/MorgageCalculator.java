@@ -5,16 +5,36 @@ public class MorgageCalculator {
 
         Scanner scanner = new Scanner(System.in);
 
+
+       // Prompting the user for inputs #Principal
         System.out.println("Hi, what is your principal?");
-        double Principal = scanner.nextDouble();
+        double principal = scanner.nextDouble();
 
+        // Interest rate
         System.out.println("what is your annual interest rate?" );
-        double interestRate = scanner.nextDouble();
+        double annualInterestRate = scanner.nextDouble();
 
+        //Loan Lenght
         System.out.println("What is your loan term in years?");
-        int loanTerm = scanner.nextInt();
+        int LoanTermYears = scanner.nextInt();
 
-        
+
+         // Creating formulas that would allow the calculator to calculate inputs from user
+        double monthlyInterestRate = (annualInterestRate/100) / 12;
+        int numberOfPayments = LoanTermYears * 12;
+
+        double monthlyPayment = principal * ((monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments)) /
+                        (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1));
+
+        double totalInterest = (monthlyPayment * numberOfPayments) - principal;
+
+
+
+
+
+
+
+
 
 
 
